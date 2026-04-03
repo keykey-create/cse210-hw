@@ -22,7 +22,7 @@ using System.Diagnostics;
             int duration = GetDuration();
 
             Console.WriteLine("Prepare to begin...");
-            System.Threading.Thread.Sleep(3000); 
+            System.Threading.Thread.Sleep(2000); 
 
             Console.WriteLine("Starting activity...");
 

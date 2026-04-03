@@ -19,7 +19,7 @@ class Breathing : Activity
             int duration = GetDuration();
 
             Console.WriteLine("Prepare to begin...");
-            System.Threading.Thread.Sleep(3000); 
+            System.Threading.Thread.Sleep(2000); 
 
             Console.WriteLine("Starting activity...");
 
@@ -31,7 +31,7 @@ class Breathing : Activity
                 string prompt = _prompts[random.Next(_prompts.Count)];
                 Console.WriteLine(prompt);
 
-                System.Threading.Thread.Sleep(2000); 
+                System.Threading.Thread.Sleep(3000); 
 
                 countdownDuration -= 2;
             }

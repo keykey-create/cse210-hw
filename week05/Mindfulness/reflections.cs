@@ -34,7 +34,7 @@ using System.Diagnostics;
             int duration = GetDuration();
 
             Console.WriteLine("Prepare to begin...");
-            System.Threading.Thread.Sleep(3000); 
+            System.Threading.Thread.Sleep(2000); 
 
             Console.WriteLine("Starting activity...");
 
@@ -50,7 +50,7 @@ using System.Diagnostics;
                 {
                     Console.WriteLine(question);
 
-                    System.Threading.Thread.Sleep(2000); 
+                    System.Threading.Thread.Sleep(3000); 
                     Console.Write(". "); 
                     System.Threading.Thread.Sleep(500); 
                 }
@@ -58,7 +58,7 @@ using System.Diagnostics;
                 countdownDuration -= _questions.Count;
             }
 
-            System.Threading.Thread.Sleep(3000); 
+            System.Threading.Thread.Sleep(5000); 
 
             string sendOffMessage = End(_activityName, "reflecting on your experiences", duration.ToString());
             Console.WriteLine(sendOffMessage);
